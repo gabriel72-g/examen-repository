@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos para Bebés</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">👶 BabyStore</div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#about">Sobre Nosotros</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <h1>Bienvenido a BabyStore</h1>
+            <p>Los mejores productos para los más pequeños</p>
+            <a href="#products" class="btn">Explorar Productos</a>
+        </section>
+
+        <section id="about" class="about">
+            <h2>Sobre Nosotros</h2>
+            <p>En BabyStore nos especializamos en ofrecer productos seguros y de alta calidad para bebés. Nos importa el bienestar y la comodidad de tu pequeño.</p>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product-list">
+                <div class="product">
+                    <h3>Biberones</h3>
+                    <p>Diseños ergonómicos y seguros.</p>
+                </div>
+                <div class="product">
+                    <h3>Ropa de Bebé</h3>
+                    <p>Materiales suaves y cómodos.</p>
+                </div>
+                <div class="product">
+                    <h3>Juguetes</h3>
+                    <p>Divertidos y aptos para todas las edades.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Contacto</h2>
+            <form id="contactForm" action="#" method="post">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit" class="btn">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 BabyStore. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
