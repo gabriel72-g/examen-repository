@@ -56,7 +56,12 @@ resource "aws_route_table" "tabla" {
     Name = "example-public-route-table"
   }
 }
-
+resource "aws_instance" "instancia" {
+    ami = "ami-0453ec754f44f9a4a"
+    instance_type = "t2,micro"
+    key_name = "cla-examen.pem" 
+  
+}
 resource "aws_route_table_association" "asociacion" {
   subnet_id      = aws_subnet.subnet_publica.id
   route_table_id = aws_route_table.tabla.id
@@ -65,8 +70,3 @@ resource "aws_route_table_association" "asociacion" {
 resource "aws_eip" "elatico" {
   domain = "vpc"
 }
-
-/* resource "aws_eip_association" "example_association" {
-  instance_id   = aws_instance.web_instance.id
-  allocation_id = aws_eip.elatico.id
-} */
